@@ -1,34 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=python,visualstudiocode,macos
-
-### macOS ###
-# General
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Icon must end with two \r
-Icon
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,python
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,python
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -83,7 +55,6 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
-pytestdebug.log
 
 # Translations
 *.mo
@@ -104,7 +75,6 @@ instance/
 
 # Sphinx documentation
 docs/_build/
-doc/_build/
 
 # PyBuilder
 target/
@@ -178,4 +148,4 @@ dmypy.json
 # Ignore all local history of files
 .history
 
-# End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,macos
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,python
