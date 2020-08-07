@@ -13,3 +13,5 @@ class YandexPageLocators():
     
     MAIL_INPUT_SUBMIT = (By.CLASS_NAME, "Button2_type_submit")
     
+class WikipediaPageLocators():
+    SEARCH_BUTTON = ()

@@ -11,6 +11,7 @@ class YandexPage(BasePage):
     search_input.send_keys("leinster")
     search_button = self.browser.find_element(*YandexPageLocators.SEARCH_BUTTON)
     search_button.click()
+    time.sleep(1)
     
     assert "leinster" in self.browser.current_url, "leinster don't in URL"
   
