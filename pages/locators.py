@@ -12,6 +12,14 @@ class YandexPageLocators():
     MAIL_INPUT_PASSWORD = (By.ID, "passp-field-passwd")
     
     MAIL_INPUT_SUBMIT = (By.CLASS_NAME, "Button2_type_submit")
+
+class WSJPageLocators():
+    SEARCH_BUTTON_SIGNIN = (By.XPATH, '//*[@id="root"]/div/div/div/div[1]/header/div[1]/div/div[2]/div/a[2]')
+    SEARCH_BUTTON_SUBSCRIBE = (By.XPATH, '//*[@id="root"]/div/div/div/div[1]/header/div[1]/div/div[2]/div/a[1]')
+
+class TechCrunchPageLocators():
+    SEARCH_LINK_LOGIN = (By.XPATH, '//*[@id="root"]/div/div/header/div/div[2]/div/div[1]/a')
+    SEARCH_LOGIN_TITLE = (By.CLASS_NAME, 'challenge>strong')
+    SEARCH_BUTTON_MORE = (By.CLASS_NAME, 'more-link>a')
+    SEARCH_BUTTON_STARTUP_BATTLEFIELD = (By.XPATH, '//*[@id="root"]/div/div/header/div[2]/div/div[2]/div/ul/li[1]/a')
     
-class WikipediaPageLocators():
-    SEARCH_BUTTON = ()
