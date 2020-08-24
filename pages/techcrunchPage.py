@@ -3,6 +3,7 @@ from pages.locators import TechCrunchPageLocators
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.keys import Keys
 import time
 
 class TechCrunchPage(BasePage):
@@ -21,3 +22,17 @@ class TechCrunchPage(BasePage):
 
     assert "startup-battlefield" in self.browser.current_url
 
+  def check_link_translate_to_japan(self):
+    search_button_jpan = self.browser.find_element(*TechCrunchPageLocators.SEARCH_BUTTON_JAPAN)
+    search_button_jpan.click()
+
+    assert "jp" in self.browser.current_url
+
+  def check_link_search(self):
+    search_button_search = self.browser.find_element(*TechCrunchPageLocators.SEARCH_BUTTON_SEARCH)
+    search_button_search.click()
+    search_input_search = self.browser.find_element(*TechCrunchPageLocators.SEARCH_INPUT_SEARCH)
+    value_for_input = "apple"
+    search_input_search.send_keys(value_for_input + "\ue007")
+
+    assert value_for_input in self.browser.current_url

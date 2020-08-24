@@ -31,4 +31,11 @@ class TechCrunchPageLocators():
     SEARCH_LOGIN_TITLE = (By.CLASS_NAME, 'challenge>strong')
     SEARCH_BUTTON_MORE = (By.CLASS_NAME, 'more-link>a')
     SEARCH_BUTTON_STARTUP_BATTLEFIELD = (By.XPATH, '//*[@id="root"]/div/div/header/div[2]/div/div[2]/div/ul/li[1]/a')
+
+    # Проверка ссылки на переход на японский язык
+    SEARCH_BUTTON_JAPAN = (By.XPATH, '//*[@id="root"]/div/div/footer/div/ul/li[4]/ul/li/a')
+
+    # Проверка кнопки поиска
+    SEARCH_BUTTON_SEARCH = (By.XPATH, '//*[@id="root"]/div/div/header/div/div[3]/div/div')
+    SEARCH_INPUT_SEARCH = (By.ID, 'search-box-form__input')
     
