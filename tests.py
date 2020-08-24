@@ -28,41 +28,59 @@ from pages.techcrunchPage import TechCrunchPage
 #       browser.quit()
 
 class TestWSJ():
-  def test_on_start_page_wsj_link_signin(self, browser):
-    try:
-      link = "https://www.wsj.com/"
-      pages = WSJPage(browser, link)
-      pages.open()
-      pages.check_link_sign_in()
-    finally:
-      browser.quit()
+  # def test_on_start_page_wsj_link_signin(self, browser):
+  #   try:
+  #     link = "https://www.wsj.com/"
+  #     pages = WSJPage(browser, link)
+  #     pages.open()
+  #     pages.check_link_sign_in()
+  #   finally:
+  #     browser.quit()
 
-  def test_on_start_page_wsj_link_subscribe(self, browser):
+  # def test_on_start_page_wsj_link_subscribe(self, browser):
+  #   try:
+  #     link = "https://www.wsj.com/"
+  #     pages = WSJPage(browser, link)
+  #     pages.open()
+  #     pages.check_link_subscribe()
+  #   finally:
+  #     browser.quit()
+  
+  # def test_on_start_page_button_africa (self, browser):
+  #   try:
+  #     link = "https://www.wsj.com/"
+  #     pages = WSJPage(browser, link)
+  #     pages.open()
+  #     pages.check_link_africa(browser)
+  #   finally:
+  #     browser.quit()
+  
+  def test_on_start_page_button_search(self, browser):
     try:
       link = "https://www.wsj.com/"
       pages = WSJPage(browser, link)
       pages.open()
-      pages.check_link_subscribe()
+      pages.check_button_search()
     finally:
       browser.quit()
    
-class TestTechCrunch():
-  def test_on_start_page_link_login(self,browser):
-    try:
-      link = "https://techcrunch.com/"
-      pages = TechCrunchPage(browser, link)
-      pages.open()
-      pages.check_link_login_on_start_page(browser)
-    finally:
-      browser.quit()
-  def test_on_start_page_right_list_startup_battlefield(self, browser):
-    try:
-      link = "https://techcrunch.com/"
-      pages = TechCrunchPage(browser, link)
-      pages.open()
-      pages.check_startup_battlefield_in_right_list(browser)
-    finally:
-      browser.quit()
+# class TestTechCrunch():
+#   def test_on_start_page_link_login(self,browser):
+#     try:
+#       link = "https://techcrunch.com/"
+#       pages = TechCrunchPage(browser, link)
+#       pages.open()
+#       pages.check_link_login_on_start_page(browser)
+#     finally:
+#       browser.quit()
+#   def test_on_start_page_right_list_startup_battlefield(self, browser):
+#     try:
+#       link = "https://techcrunch.com/"
+#       pages = TechCrunchPage(browser, link)
+#       pages.open()
+#       pages.check_startup_battlefield_in_right_list(browser)
+#     finally:
+#       browser.quit()
       
 
       
